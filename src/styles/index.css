@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #071025;
+  --panel: #0b1220;
+  --accent: #4fd1c5;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: radial-gradient(1000px 600px at 10% 10%, rgba(79,209,197,0.06), transparent), var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.shadow-panel {
+  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* small transitions for KPI value updates */
+.kpi-update {
+  transition: transform 220ms cubic-bezier(.2,.9,.3,1), opacity 220ms;
+}
+
+/* utility to force fullscreen look */
+.big-screen {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* make scrollbars subtle */
+::-webkit-scrollbar { height: 10px; width: 10px }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.06); border-radius: 8px }
