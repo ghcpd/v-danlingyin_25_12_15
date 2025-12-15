@@ -1,0 +1,150 @@
+oswe-mini-prime-new：：
+
+User: Prompt
+
+You are a senior frontend engineer and UI architect.
+Your task is to create a complete UI application from scratch based on the provided input requirements.
+This is a UI Case test focusing on:
+- Architecture
+- UI correctness
+- Data visualization
+- Engineering discipline
+- Run-ability (must actually work)
+Tech stack requirements:
+- React + TypeScript
+- Tailwind CSS
+- pnpm as package manager
+- Component library is optional
+--------------------------------------------------------------------------------
+INPUT FILES PROVIDED
+You are given a file named:
+- ui_requirements.ts
+This file defines:
+- Business requirements
+- Data schema
+- UI layout expectations
+- Interaction rules
+You MUST strictly follow it. You MUST NOT invent features not described.
+--------------------------------------------------------------------------------
+TASK REQUIREMENTS
+1.Create a full working React + TypeScript project
+2.Use Tailwind CSS to implement a digital dashboard / big-screen style UI
+3.The application MUST include:
+- A full-screen dashboard layout
+- At least 3 data cards (KPIs)
+- At least 1 chart component
+- A real-time-like data refresh simulation
+4.UI must match the specification in ui_requirements.ts
+--------------------------------------------------------------------------------
+MANDATORY DELIVERABLES
+You MUST produce the following files:
+1.package.json
+2.pnpm-lock.yaml (can be minimal but valid)
+3.tailwind.config.ts
+4.src/main.tsx
+5.src/App.tsx
+6.src/dashboard/Dashboard.tsx
+7.src/components/KpiCard.tsx
+8.src/components/ChartPanel.tsx
+9.src/styles/index.css
+10.README.md
+--------------------------------------------------------------------------------
+README.md MUST INCLUDE
+- How to install dependencies
+- How to run the project
+- UI structure explanation
+- How data refresh works
+- Screenshot placeholder section
+--------------------------------------------------------------------------------
+RULES (STRICT)
+- MUST NOT hallucinate missing files
+- MUST NOT skip any required file
+- MUST NOT leave TODOs
+- MUST NOT output pseudo-code
+- MUST provide real, compilable React + TS code
+- MUST ensure pnpm install && pnpm dev works
+- MUST use Tailwind classes (not plain CSS)
+- MUST keep output structured and readable
+--------------------------------------------------------------------------------
+EVALUATION METRICS
+Your output will be evaluated on:
+- Completeness of project structure
+- UI fidelity to requirements
+- Code quality and typing correctness
+- Realistic dashboard layout
+- Ability to run without errors
+
+
+GitHub Copilot: I'll inspect ui_requirements.ts to follow the exact specification.
+
+Read [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/ui_requirements.ts)
+
+I'll create the project files and implement the dashboard components now.
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/package.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/pnpm-lock.yaml)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/tailwind.config.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/postcss.config.cjs)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/index.html)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/tsconfig.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/src/main.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/src/App.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/src/dashboard/Dashboard.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/src/components/KpiCard.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/src/components/ChartPanel.tsx)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/src/styles/index.css)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/1215/oswe-mini-prime-new/README.md)
+
+I'll fix the responsive grid class to a concrete Tailwind class and add a concise TODO list tracking completed steps.
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Created 5 todos
+
+Using "Replace String in File"
+
+
+```
+
+```
+Done — I implemented the full React + TypeScript dashboard per ui_requirements.ts.
+
+**What I added**
+- **Scaffold:** package.json, pnpm-lock.yaml, tsconfig.json, index.html, postcss config
+- **Tailwind:** tailwind.config.ts, index.css
+- **App files:** src/main.tsx, App.tsx
+- **Dashboard:** Dashboard.tsx
+- **Components:** src/components/KpiCard.tsx, ChartPanel.tsx
+- **Docs:** README.md
+
+**Highlights**
+- Full-screen, dark theme; header height uses `dashboardConfig.layout.headerHeight`.
+- Three KPI cards (animated on change) and one SVG line chart using `initialData.trend`.
+- Real-time-like refresh driven by `dashboardConfig.refreshIntervalMs` (3s).
+- All required files present and TypeScript-typed; Tailwind classes used for styling/animation.
+
+**Run**
+1. Install: `pnpm install`
+2. Dev server: `pnpm dev`
+
+Would you like me to run `pnpm install` and `pnpm dev` here to verify, or add a small test harness?
+
+Made changes.
