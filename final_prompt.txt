@@ -1,0 +1,73 @@
+Prompt
+
+You are a senior frontend engineer and UI architect.
+Your task is to create a complete UI application from scratch based on the provided input requirements.
+This is a UI Case test focusing on:
+- Architecture
+- UI correctness
+- Data visualization
+- Engineering discipline
+- Run-ability (must actually work)
+Tech stack requirements:
+- React + TypeScript
+- Tailwind CSS
+- pnpm as package manager
+- Component library is optional
+--------------------------------------------------------------------------------
+INPUT FILES PROVIDED
+You are given a file named:
+- ui_requirements.ts
+This file defines:
+- Business requirements
+- Data schema
+- UI layout expectations
+- Interaction rules
+You MUST strictly follow it. You MUST NOT invent features not described.
+--------------------------------------------------------------------------------
+TASK REQUIREMENTS
+1.Create a full working React + TypeScript project
+2.Use Tailwind CSS to implement a digital dashboard / big-screen style UI
+3.The application MUST include:
+- A full-screen dashboard layout
+- At least 3 data cards (KPIs)
+- At least 1 chart component
+- A real-time-like data refresh simulation
+4.UI must match the specification in ui_requirements.ts
+--------------------------------------------------------------------------------
+MANDATORY DELIVERABLES
+You MUST produce the following files:
+1.package.json
+2.pnpm-lock.yaml (can be minimal but valid)
+3.tailwind.config.ts
+4.src/main.tsx
+5.src/App.tsx
+6.src/dashboard/Dashboard.tsx
+7.src/components/KpiCard.tsx
+8.src/components/ChartPanel.tsx
+9.src/styles/index.css
+10.README.md
+--------------------------------------------------------------------------------
+README.md MUST INCLUDE
+- How to install dependencies
+- How to run the project
+- UI structure explanation
+- How data refresh works
+- Screenshot placeholder section
+--------------------------------------------------------------------------------
+RULES (STRICT)
+- MUST NOT hallucinate missing files
+- MUST NOT skip any required file
+- MUST NOT leave TODOs
+- MUST NOT output pseudo-code
+- MUST provide real, compilable React + TS code
+- MUST ensure pnpm install && pnpm dev works
+- MUST use Tailwind classes (not plain CSS)
+- MUST keep output structured and readable
+--------------------------------------------------------------------------------
+EVALUATION METRICS
+Your output will be evaluated on:
+- Completeness of project structure
+- UI fidelity to requirements
+- Code quality and typing correctness
+- Realistic dashboard layout
+- Ability to run without errors
